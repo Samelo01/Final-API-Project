@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Weather Data from Open-Meteo API</h1>
+  <header>
+    <h1>Weather App</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="current-location-btn">Use Current Location</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-    <script src="index.js"></script>
+  <main>
+    <section id="location-search">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn">Search</button>
+    </section>
+    
+    <div id="weather-info">
+      <h2 id="location-name">Location</h2>
+      <p><strong>Temperature:</strong> <span id="current-temperature">N/A</span></p>
+      <p><strong>Weather Condition:</strong> <span id="current-condition">N/A</span></p>
+    </div>
+  </main>
+  
+  <script src="app.js"></script>
 </body>
 </html>
